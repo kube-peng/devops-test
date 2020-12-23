@@ -1,3 +1,6 @@
 #!/bin/bash
-sleep 3600m
+
 ./jenkins-app
+
+echo "tenxcloud test"
+sleep 3600m
