@@ -4,7 +4,8 @@ ADD . /go/src/app
 
 WORKDIR /go/src/app
 
-RUN GOOS=linux GOARCH=386 go build -v -o /go/src/app/jenkins-app
+RUN GOOS=linux GOARCH=386 go build -v -o /go/src/app/jenkins-app \
+    && chmod 777 app.sh
 
 #CMD ["./jenkins-app"]
 CMD ["./app.sh"]
